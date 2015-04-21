@@ -1,0 +1,23 @@
+<h1>Home#index</h1>
+
+<i><b>Request =></b></i><br />
+<b> Hostname: </b> <%= request.host %><br />
+<b> Content-Type: </b> <%= request.format %><br />
+<b>Method: </b> <%= request.method %><br />
+<b>Port: </b> <%= request.port %><br />
+<b>Protocol: </b> <%= request.protocol %><br />
+<b>Query string: </b> <%= request.query_string %><br />
+<b>Client IP: </b> <%= request.remote_ip %><br />
+<b>URL: </b> <%= request.url %><br />
+<b>Connection: </b> <%= request.headers["Connection"] %><br />
+<b>Path parameters: </b><%= request.path_parameters %><br />
+<b>Query parameters: </b><%= request.query_parameters %><br />
+<b>Request parameters: </b><%= request.request_parameters %><br />
+<br />
+<i><b>Response =></b></i><br />
+<b>Body: </b><%= response.body %><br />
+<b>Status: </b><%= response.status %><br />
+<b>Location: </b><%= response.location %><br />
+<b>Content-Type: </b><%= response.content_type %><br />
+<b>Charset: </b><%= response.charset %><br />
+<b>Headers: </b><%= response.headers %><br />
